@@ -9,7 +9,7 @@ function App() {
     <>
       <ChakraProvider>
         <NavBar />
-        <ItemListContainer greeting={'Welcome'} />
+        <ItemListContainer greeting={'Welcome to Maquinola'} />
       </ChakraProvider>
     </>
   );
