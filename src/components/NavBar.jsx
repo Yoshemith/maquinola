@@ -29,7 +29,7 @@ export const NavBar = () => {
           </MenuButton>
           <MenuList>
             <MenuItem>Bulldozers</MenuItem>
-            <MenuItem>excavators</MenuItem>
+            <MenuItem>Excavators</MenuItem>
             <MenuItem>Loaders</MenuItem>
           </MenuList>
         </Menu>
