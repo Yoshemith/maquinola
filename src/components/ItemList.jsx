@@ -3,6 +3,14 @@ import { Grid } from '@chakra-ui/react';
 import { Item } from './Item';
 
 export const ItemList = ({ products }) => {
+  if (products.length === 0) {
+    return (
+      <div style={{ textAlign: 'center', padding: '25px' }}>
+        <h2>No hay productos disponibles</h2>
+      </div>
+    );
+  }
+
   return (
     <>
       <Grid templateColumns="repeat(4, 1fr)" gap={6}>

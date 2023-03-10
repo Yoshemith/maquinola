@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { CartWidget } from './CartWidget';
 import {
   Button,
@@ -31,7 +32,9 @@ export const NavBar = () => {
         width="150px"
         justifyContent="center"
       >
-        <Box as="img" src={logo} alt="Logo" h="100px" mr="4" />
+        <Link to={'/'}>
+          <Box as="img" src={logo} alt="Logo" h="100px" mr="4" />
+        </Link>
       </Box>
       <Spacer />
       <Box
@@ -51,9 +54,15 @@ export const NavBar = () => {
             Categories
           </MenuButton>
           <MenuList>
-            <MenuItem>Bulldozers</MenuItem>
-            <MenuItem>Excavators</MenuItem>
-            <MenuItem>Loaders</MenuItem>
+            <Link to={`/category/${'Montacargas'}`}>
+              <MenuItem>Montacargas</MenuItem>
+            </Link>
+            <Link to={`/category/${'Elevadores-Tijera'}`}>
+              <MenuItem>Elevadores Tijera</MenuItem>
+            </Link>
+            <Link to={`/category/${'Brazos-Articulados'}`}>
+              <MenuItem>Brazos Articulados</MenuItem>
+            </Link>
           </MenuList>
         </Menu>
       </Box>

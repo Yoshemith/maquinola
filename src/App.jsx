@@ -1,18 +1,25 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { ItemListContainer } from './components/ItemListContainer';
-import { ChakraProvider } from '@chakra-ui/react';
 import { Banner } from './components/Banner';
 
 function App() {
   return (
     <>
-      <ChakraProvider>
+      <BrowserRouter>
         <NavBar />
         <Banner />
-        <ItemListContainer />
-      </ChakraProvider>
+        <Routes>
+          <Route exact path="/" element={<ItemListContainer />} />
+          <Route
+            exact
+            path="/category/:category"
+            element={<ItemListContainer />}
+          />
+          {/* <Route exact path="/item/:id" element={<ItemDetailContainer />} /> */}
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
