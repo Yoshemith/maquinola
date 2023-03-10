@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "Montacargas 3000 lb",
+    "description": "Montacargas 3000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 50000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/Re8TU3L9LkSHLxzzpfMMnV_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 2,
+    "title": "Montacargas 3500 lb",
+    "description": "Montacargas 3500lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 60000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/KGCuaDvP7Ue23wahV6diGT_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 3,
+    "title": "Montacargas 5000 lb",
+    "description": "Montacargas 5000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 70000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/fgsiGjhGHjR2ZBFVCCoPqw_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 4,
+    "title": "Montacargas 6000 lb",
+    "description": "Montacargas 6000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 80000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/jnGaHoCYCdZpeLvE3Z9WbP_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 5,
+    "title": "Montacargas 7000 lb",
+    "description": "Montacargas 7000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 90000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/FUTRkqr2Pp2bvqHd2zcHsM_small_wree52T.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 6,
+    "title": "Montacargas 10000 lb",
+    "description": "Montacargas 10000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 100000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/5po7WBqW5ykqP9MoMdi8ug_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 7,
+    "title": "Montacargas 15000 lb",
+    "description": "Montacargas 15000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 120000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/D8L87bSCUnCKYiX8pfW9cK_small.png",
+    "category": "Montacargas"
+  },
+  {
+    "id": 8,
+    "title": "Montacargas 30000 lb",
+    "description": "Montacargas 30000lb con batería de 48v y cargador de 110v y 220v con 2 meses de garantía y 1 año de servicio técnico.",
+    "price": 150000,
+    "url": "https://rendalomaq-media-prod.s3.amazonaws.com/media/thumbnails/categories/VaTzJr6Uek83viMRGcKCWU_small.png",
+    "category": "Montacargas"
+  }
+]
