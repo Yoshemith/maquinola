@@ -11,7 +11,7 @@ function App() {
       <ChakraProvider>
         <NavBar />
         <Banner />
-        <ItemListContainer greeting={'Welcome to Maquinola'} />
+        <ItemListContainer />
       </ChakraProvider>
     </>
   );
