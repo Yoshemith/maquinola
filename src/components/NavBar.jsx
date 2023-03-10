@@ -12,19 +12,36 @@ import {
   Text,
 } from '@chakra-ui/react';
 
+import logo from '../assets/Maquinola.png';
+
 export const NavBar = () => {
   return (
-    <Flex bg="gray.900" w="100%" p={4} color="white" alignItems="center">
+    <Flex
+      bg="gray.900"
+      w="100%"
+      color="white"
+      alignItems="center"
+      justifyContent="space-between"
+    >
       <Spacer />
-      <Box p="2">
-        <Text fontSize="1xl" fontWeight="bold">
-          Maquinola
-        </Text>
+      <Box
+        display="flex"
+        alignItems="center"
+        width="150px"
+        justifyContent="center"
+      >
+        <Box as="img" src={logo} alt="Logo" h="100px" mr="4" />
       </Box>
       <Spacer />
-      <Box color="black" p="2">
+      <Box
+        color="black"
+        display="flex"
+        alignItems="center"
+        width="150px"
+        justifyContent="center"
+      >
         <Menu>
-          <MenuButton as={Button} w="50">
+          <MenuButton as={Button} w="50" bgColor={'#ffcb00'}>
             Categories
           </MenuButton>
           <MenuList>
@@ -35,7 +52,12 @@ export const NavBar = () => {
         </Menu>
       </Box>
       <Spacer />
-      <Box p="2">
+      <Box
+        display="flex"
+        alignItems="center"
+        width="150px"
+        justifyContent="center"
+      >
         <CartWidget />
       </Box>
       <Spacer />
