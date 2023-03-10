@@ -11,6 +11,7 @@ import {
   Spacer,
   Text,
 } from '@chakra-ui/react';
+import { ChevronDownIcon } from '@chakra-ui/icons';
 
 import logo from '../assets/Maquinola.png';
 
@@ -41,7 +42,12 @@ export const NavBar = () => {
         justifyContent="center"
       >
         <Menu>
-          <MenuButton as={Button} w="50" bgColor={'#ffcb00'}>
+          <MenuButton
+            as={Button}
+            w="50"
+            bgColor={'#ffcb00'}
+            rightIcon={<ChevronDownIcon />}
+          >
             Categories
           </MenuButton>
           <MenuList>
