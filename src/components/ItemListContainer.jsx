@@ -23,6 +23,12 @@ export const ItemListContainer = () => {
     (item) => item.category === category,
   );
 
+  if (products.length === 0) {
+    return (
+      <div style={{ textAlign: 'center', padding: '25px' }}>Loading...</div>
+    );
+  }
+
   return (
     <div style={{ textAlign: 'center', padding: '25px' }}>
       {category ? (

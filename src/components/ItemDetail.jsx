@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Box, Image, Button } from '@chakra-ui/react';
 import { StarIcon } from '@chakra-ui/icons';
 
-export const Item = ({
-  id,
-  title,
-  description,
-  price,
-  stock,
-  category,
-  imageUrl,
-}) => {
+export const ItemDetail = ({ product }) => {
+  if (!product) {
+    return (
+      <div style={{ textAlign: 'center', padding: '25px' }}>
+        <h2>Este producto no se encuentra disponible</h2>
+      </div>
+    );
+  }
+
   const handleFormatPrice = (price) => {
     return price.toLocaleString('en-US', {
       style: 'currency',
@@ -21,20 +20,26 @@ export const Item = ({
 
   return (
     <Box
-      maxW="sm"
-      borderWidth="1px"
+      maxW="2xl"
+      borderWidth="2px"
       borderRadius="lg"
       overflow="hidden"
       justifyContent="center"
       display="flex"
-      flexDirection="column"
+      flexDirection="row"
     >
-      <Box mx="auto">
-        <Image src={imageUrl} alt={imageUrl} p="4" height={185} />
+      <Box mt="6" alignItems="center">
+        <Image
+          src={product.imageUrl}
+          alt={product.imageUrl}
+          p="1"
+          height={220}
+          width="2xl"
+        />
       </Box>
 
-      <Box p="5">
-        <Box display="flex" mt="2" justifyContent="center">
+      <Box p="5" display="flex" flexDirection="column">
+        <Box display="flex" mt="2" justifyContent="end">
           {Array(5)
             .fill('')
             .map((_, i) => (
@@ -52,24 +57,32 @@ export const Item = ({
           lineHeight="tight"
           noOfLines={1}
         >
-          {title}
+          {product.title}
         </Box>
 
-        <Box>
-          {handleFormatPrice(price) + ' '}
+        <Box mt="2" fontWeight="light" as="h4" lineHeight="tight">
+          {product.description}
+        </Box>
+
+        <Box mt="3" mb="3">
+          {handleFormatPrice(product.price) + ' '}
           <Box as="span" color="gray.600" fontSize="sm">
             USD
           </Box>
         </Box>
 
-        <Box mt="4">
+        <Box mb="3" as="span" color="gray.600" fontSize="sm">
+          En stock: {product.stock}
+        </Box>
+
+        <Box mt="4" style={{ margin: 'auto' }}>
           <Button
             colorScheme="yellow"
             variant="solid"
             bgColor={'#ffcb00'}
             color="blackAlpha.800"
           >
-            <Link to={`/item/${id}`}>Ver detalles</Link>
+            Añadir al carrito
           </Button>
         </Box>
       </Box>
